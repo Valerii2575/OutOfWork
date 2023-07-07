@@ -1,4 +1,4 @@
-# OutOfWork
+# UnitOfWork
 
 We are going do discuss the Unit of work design pattern with the help of
 generic repository and and implementation using .NET Core 6 Web API.
@@ -30,6 +30,28 @@ and avoid redundant code.
     - Infrastructure
     - Services
 
-    Add model class ProductDetails.cs inside the Core project
+    Add model class ProductDetails.cs inside the Core project.
+
+    In Infrastructure project, add an implementation of all repositories that we created befor
+    and add DbContextClass
+    For work with DbContext, need to add references
+        - Microsoft.EntityFrameworkCore
+        - Microsoft.EntityFrameworkCore.SqlServer
+        - Microsoft.EntityFrameworkCore.Tools
+
+    and add reference to API
+        - Microsoft.entityFramework.Design
+        - Microsoft.EntityFrameworkCore.Sqlite - for work with SQLite server
+
+    and add reference to Core project
+
+    After that, create Extentions classes for used to registering DI services and configure 
+    that inside the Program.cs
+
+    Generate migration using command
+    dotnet ef --startup-project ../OutOfWork.API  migrations add InitialDb
+
+    and update DB
+    dotnet ef --startup-project ../OutOfWork.API  database update
 
 
