@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OutOfWork.Core\OutOfWork.Core.csproj" />
+    <ProjectReference Include="..\OutOfWork.Services\OutOfWork.Services.csproj" />
     <ProjectReference Include="..\OutOfWork.Infrastructure\OutOfWork.Infrastructure.csproj" />
   </ItemGroup>
 

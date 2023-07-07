@@ -54,4 +54,12 @@ and avoid redundant code.
     and update DB
     dotnet ef --startup-project ../OutOfWork.API  database update
 
+    ## Create Product Service and Controller
+
+    Next, create a product service inside Service project 
+    which we inject and consume inside the main controller
+
+    
+
+
 

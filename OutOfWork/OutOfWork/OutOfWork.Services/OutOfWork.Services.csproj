@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OutOfWork.Core\OutOfWork.Core.csproj" />
+  </ItemGroup>
+
 </Project>

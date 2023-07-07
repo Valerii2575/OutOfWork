@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using OutOfWork.Core.Interfaces;
 using OutOfWork.Infrastructure;
 using OutOfWork.Infrastructure.Repositories;
+using OutOfWork.Services.Interfaces;
+using OutOfWork.Services.Services;
 
 namespace OutOfWork.API.Extentions
 {
@@ -11,6 +13,7 @@ namespace OutOfWork.API.Extentions
         {
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IProductService, ProductService>();
 
             return services;
         }
