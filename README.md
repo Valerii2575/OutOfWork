@@ -59,7 +59,27 @@ and avoid redundant code.
     Next, create a product service inside Service project 
     which we inject and consume inside the main controller
 
-    
+
+# Add Angular client application
+
+In this part we will create dashboard
+
+## First step
+
+    - Install angular material
+        ng add @angular/material
+    - Install highcharts packages
+        npm i highcharts-angular --save
+        npm i highcharts --save 
+    - Install Flex Layout package
+        npm i @angular/flex-layout @angular/sdk --save
+
+## Layout definition
+
+    - Create the first layout
+    - Create a component for Dashboard page
+    - Use the first layout as a Parent Rout Component in app-routing.module.ts 
+        and the Dashboard page as Child Component
 
 
 
